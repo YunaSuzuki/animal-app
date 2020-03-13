@@ -7,6 +7,25 @@ ul {
   ul li {
     list-style: none; }
 
+header {
+  display: flex; }
+  header .title-box {
+    width: 33%;
+    margin: auto;
+    text-align: center; }
+  header img {
+    width: 48px;
+    height: auto; }
+
+menu ul {
+  display: flex; }
+  menu ul li {
+    width: 33%;
+    text-align: center; }
+    menu ul li i {
+      font-size: 24px;
+      font-size: 1.5rem; }
+
 @media (max-width: 560px) {
   .wrapper {
     margin: 0 16px; } }
@@ -16,5 +35,34 @@ ul {
 
 .contents {
   margin-bottom: 56px; }
+  .contents .icons {
+    margin-top: 8px; }
+    .contents .icons span i {
+      font-size: 28px;
+      font-size: 1.75rem; }
+    .contents .icons .icons-right {
+      float: right; }
+  .contents .clearfix::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .contents__text {
+    margin-top: 8px;
+    font-size: 16px;
+    font-size: 1rem; }
+  .contents__tag-box {
+    margin-top: 8px;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    .contents__tag-box .tag {
+      display: inline-block;
+      padding: 8px 24px 8px 16px;
+      background-color: #F4F4F4;
+      border-radius: 30px; }
+      .contents__tag-box .tag__icon {
+        margin-right: 8px;
+        color: #5C5C5C; }
+      .contents__tag-box .tag__text {
+        color: #9F9F9F; }
 
 /*# sourceMappingURL=style.css.map */

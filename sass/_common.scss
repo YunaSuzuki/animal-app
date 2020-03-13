@@ -1,3 +1,12 @@
+
+@mixin fontsize($size: 24) {
+
+font-size: $size + px;
+
+font-size: ($size / 16) * 1rem;
+
+}
+
 menu{
   padding: 0;
 }
@@ -11,6 +20,39 @@ ul{
   }
 }
 
+//header
+header{
+  display: flex;
+  
+  
+  .title-box{
+    width: 33%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  img{
+    width: 48px;
+    height: auto;
+  }
+  
+}
+
+//menu
+menu{
+  ul{
+    display: flex;
+    
+    li{
+      width: 33%;
+      text-align: center;
+      
+      i{
+        @include fontsize(24);
+      }
+    }
+  }
+}
 
 
 .wrapper{
@@ -25,4 +67,49 @@ ul{
 
 .contents{
   margin-bottom: 56px;
+  
+  .icons{
+    margin-top: 8px;
+    
+    span i{
+      @include fontsize(28);
+    }
+    
+    .icons-right{
+      float: right;
+    }
+  }
+  
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  &__text{
+    margin-top: 8px;
+    @include fontsize(16);
+  }
+  
+  &__tag-box{
+    margin-top: 8px;
+    @include fontsize(12);
+    
+    .tag{
+      display: inline-block;
+      padding: 8px 24px 8px 16px;
+      background-color: #F4F4F4;
+      border-radius: 30px;
+      
+      &__icon{
+        margin-right: 8px;
+        color: #5C5C5C;
+      }
+      
+      &__text{
+        color: #9F9F9F;
+      }
+    }
+  }
 }
+
