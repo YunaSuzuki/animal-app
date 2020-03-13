@@ -123,3 +123,30 @@ menu{
   }
 }
 
+//user.html
+.user-box{
+
+  &__image{
+    width: 288px;
+    height: 288px;
+    margin: auto;
+    
+    img{
+      height: 100%;
+    }
+  }
+  
+  &__username{
+    @include fontsize(24);
+  }
+  
+  .follow-box{
+    .follower{
+      margin-left: 16px;
+    }
+  }
+  
+  .description{
+    margin: 32px 0 56px;
+  }
+}

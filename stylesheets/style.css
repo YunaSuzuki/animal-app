@@ -72,4 +72,18 @@ menu ul {
       .contents__tag-box .tag__text {
         color: #9F9F9F; }
 
+.user-box__image {
+  width: 288px;
+  height: 288px;
+  margin: auto; }
+  .user-box__image img {
+    height: 100%; }
+.user-box__username {
+  font-size: 24px;
+  font-size: 1.5rem; }
+.user-box .follow-box .follower {
+  margin-left: 16px; }
+.user-box .description {
+  margin: 32px 0 56px; }
+
 /*# sourceMappingURL=style.css.map */
