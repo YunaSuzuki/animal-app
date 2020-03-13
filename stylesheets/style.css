@@ -8,14 +8,21 @@ ul {
     list-style: none; }
 
 header {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
+  header .left-box {
+    width: 33%;
+    display: block;
+    content: "";
+    clear: both; }
   header .title-box {
     width: 33%;
-    margin: auto;
     text-align: center; }
-  header img {
-    width: 48px;
-    height: auto; }
+  header .right-box {
+    width: 33%;
+    text-align: right; }
+  header .header-image {
+    width: 32px; }
 
 menu ul {
   display: flex; }
