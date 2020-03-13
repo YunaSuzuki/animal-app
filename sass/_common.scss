@@ -1,0 +1,28 @@
+menu{
+  padding: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  
+  li{
+      list-style: none;
+  }
+}
+
+
+
+.wrapper{
+  @media (max-width: 560px){
+      margin: 0 16px;
+  }
+  
+  @media (min-width: 561px) and (max-width: 920px){
+      margin: 0 56px;
+  }
+}
+
+.contents{
+  margin-bottom: 56px;
+}
