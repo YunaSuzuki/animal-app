@@ -76,7 +76,20 @@ menu{
   }
 }
 
+.contents-wrapper{
+  @media(min-width: 560px){
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .contents{
+  @media(min-width: 560px) and(max-width: 920px){
+    width: 30%;
+    margin: 0 8px 56px;
+  }
+  
+  
   margin-bottom: 56px;
   
   .icons{

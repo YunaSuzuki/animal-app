@@ -41,8 +41,17 @@ menu ul {
   .wrapper {
     margin: 0 56px; } }
 
+@media (min-width: 560px) {
+  .contents-wrapper {
+    display: flex;
+    flex-wrap: wrap; } }
+
 .contents {
   margin-bottom: 56px; }
+  @media (min-width: 560px) and (max-width: 920px) {
+    .contents {
+      width: 30%;
+      margin: 0 8px 56px; } }
   .contents .icons {
     margin-top: 8px; }
     .contents .icons span i {
