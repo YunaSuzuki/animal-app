@@ -1,4 +1,5 @@
-menu {
+menu, p {
+  margin: 0;
   padding: 0; }
 
 ul {
@@ -33,10 +34,10 @@ menu ul {
       font-size: 24px;
       font-size: 1.5rem; }
 
-@media (max-width: 560px) {
+@media (max-width: 559px) {
   .wrapper {
     margin: 0 16px; } }
-@media (min-width: 561px) and (max-width: 920px) {
+@media (min-width: 560px) and (max-width: 920px) {
   .wrapper {
     margin: 0 56px; } }
 
@@ -72,18 +73,46 @@ menu ul {
       .contents__tag-box .tag__text {
         color: #9F9F9F; }
 
-.user-box__image {
-  width: 288px;
-  height: 288px;
-  margin: auto; }
-  .user-box__image img {
-    height: 100%; }
-.user-box__username {
-  font-size: 24px;
-  font-size: 1.5rem; }
-.user-box .follow-box .follower {
-  margin-left: 16px; }
-.user-box .description {
-  margin: 32px 0 56px; }
+.user-box {
+  margin-top: 48px; }
+  .user-box .user-box__first-row {
+    margin-bottom: 24px; }
+    .user-box .user-box__first-row__username {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+      font-size: 1.5rem; }
+    .user-box .user-box__first-row__cog {
+      float: right;
+      display: inline-block;
+      vertical-align: middle;
+      height: 24px; }
+  .user-box .clearfix::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .user-box .follow-box .follower {
+    margin-left: 16px; }
+  .user-box .description {
+    margin: 32px 0 56px; }
+  @media (min-width: 560px) {
+    .user-box {
+      display: flex; }
+      .user-box__image {
+        width: 40%; }
+        .user-box__image img {
+          width: 100%; }
+      .user-box__lower {
+        padding-left: 24px;
+        width: 60%; } }
+  @media (max-width: 559px) {
+    .user-box__image {
+      width: 288px;
+      height: 288px;
+      margin: auto; }
+      .user-box__image img {
+        height: 100%; }
+    .user-box__lower {
+      margin-top: 24px; } }
 
 /*# sourceMappingURL=style.css.map */
