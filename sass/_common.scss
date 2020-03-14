@@ -68,11 +68,17 @@ menu{
 
 .wrapper{
   @media (max-width: 559px){
-      margin: 0 16px;
+    margin: 0 16px;
   }
   
   @media (min-width: 560px) and (max-width: 920px){
-      margin: 0 56px;
+    margin: 0 56px;
+  }
+  
+  @media(min-width: 921px){
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
   }
 }
 
@@ -84,13 +90,21 @@ menu{
 }
 
 .contents{
-  @media(min-width: 560px) and(max-width: 920px){
-    width: 30%;
-    margin: 0 8px 56px;
+  
+  @media(min-width: 1300px){
+    width: 18%;
   }
   
+  @media(min-width: 921px) and (max-width: 1299px){ 
+    width: 29%;
+  }
+
+  @media(min-width: 560px) and(max-width: 920px){
+    width: 29%;
+    
+  }
   
-  margin-bottom: 56px;
+  margin: 0 8px 56px;
   
   .icons{
     margin-top: 8px;

@@ -40,6 +40,11 @@ menu ul {
 @media (min-width: 560px) and (max-width: 920px) {
   .wrapper {
     margin: 0 56px; } }
+@media (min-width: 921px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px; } }
 
 @media (min-width: 560px) {
   .contents-wrapper {
@@ -47,11 +52,16 @@ menu ul {
     flex-wrap: wrap; } }
 
 .contents {
-  margin-bottom: 56px; }
+  margin: 0 8px 56px; }
+  @media (min-width: 1300px) {
+    .contents {
+      width: 18%; } }
+  @media (min-width: 921px) and (max-width: 1299px) {
+    .contents {
+      width: 29%; } }
   @media (min-width: 560px) and (max-width: 920px) {
     .contents {
-      width: 30%;
-      margin: 0 8px 56px; } }
+      width: 29%; } }
   .contents .icons {
     margin-top: 8px; }
     .contents .icons span i {
